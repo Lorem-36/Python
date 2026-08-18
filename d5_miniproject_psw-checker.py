@@ -1,4 +1,4 @@
-
+#password checker
 psw=input("Enter your password:")
 
 if len(psw)>=8 and "@" in psw:
