@@ -1,3 +1,4 @@
+#Project: Student Marks Calculation
 name=input("Enter your name: ")
 print("Student Name:",name)
 mark1=int(input("Enter the marks: "))
@@ -29,11 +30,19 @@ def check_result(average):
         return "Pass"
     else:
         return "Fail"
+def highest_mark(marks):
+    highest=marks[0]
+    for mark in marks:
+        if mark>highest:
+            highest=mark
+    return highest
 total=calculate_total(marks)
 average=calculate_average(marks)
 grade=get_grade(average)
 result=check_result(average)
+highest=highest_mark(marks)
 print("Total Marks:",total)
 print("Average Marks:",average)
 print("Grade:",grade)
 print("Result:",result)
+print("Highest Mark:",highest)
