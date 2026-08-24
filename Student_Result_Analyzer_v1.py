@@ -1,3 +1,4 @@
+#Student Result Analyzer v1
 name=input("Enter your name: ")
 print("Student Name:",name)
 A=int(input("Enter the no of subjects:"))
