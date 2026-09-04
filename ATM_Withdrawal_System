@@ -1,0 +1,16 @@
+#Mini_Project: ATM Withdrawal System
+balance=1000
+withtdrawal = int(input("enter amount to withdraw: "))
+print("Your balance is:",balance)
+print("Your withdrawal amount is:",withtdrawal)
+def check_withdrawal(balance,withtdrawal):
+    if withtdrawal<=balance:
+        remaining=balance-withtdrawal
+        return remaining
+    else:
+        return "Insufficient balance"
+rem=check_withdrawal(balance,withtdrawal)
+if rem=="Insufficient balance":
+    print("Insufficient balance")
+else:
+      print("Remaining balance after withdrawal is:",rem)

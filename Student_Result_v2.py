@@ -1,4 +1,13 @@
 No=int(input("Enter the number of students: "))
-sub=[]
+students=[]
 for i in range(No):
-    sub.append(input("Enter the name of student: "))
+    name=input("Enter the name of student: ")
+    student={}
+    student['name']=name
+    students.append(student)
+    
+sub = int(input("Enter number of subjects: "))
+marks = []
+for i in range(sub):
+    mark = int(input("Enter mark: "))
+    marks.append(mark)
