@@ -4,13 +4,16 @@ withtdrawal = int(input("enter amount to withdraw: "))
 print("Your balance is:",balance)
 print("Your withdrawal amount is:",withtdrawal)
 def check_withdrawal(balance,withtdrawal):
-    if withtdrawal<=balance:
+    if withtdrawal<=0:
+        return "Invalid withdrawal amount"
+    elif withtdrawal>balance:
+        return "Insufficient balance"
+    else:
         remaining=balance-withtdrawal
         return remaining
-    else:
-        return "Insufficient balance"
+
 rem=check_withdrawal(balance,withtdrawal)
-if rem=="Insufficient balance":
-    print("Insufficient balance")
+if rem=="Insufficient balance" or rem=="Invalid withdrawal amount":
+    print(rem)
 else:
       print("Remaining balance after withdrawal is:",rem)
