@@ -1,3 +1,4 @@
+#Mini-Project 2 — Employee Salary & Tax Calculator
 salary=int(input("Enter your salary:"))
 bonus=int(input("Enter your bonus percentage: "))
 tax_percentage=int(input("Enter tax percentage: "))

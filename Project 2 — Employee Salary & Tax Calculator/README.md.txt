@@ -22,14 +22,14 @@ A simple Python mini-project that calculates an employee's salary after adding a
 - Parameters and arguments
 - Return values
 - Passing values between functions
-- `if, elif, and else
+- if, elif, and else
 - Function calling
 
-# 💰 Employee Salary & Tax Calculator
+#Employee Salary & Tax Calculator
 
 A simple Python mini-project that calculates an employee's salary after adding a bonus and deducting tax. It also determines the employee's salary bracket based on the final salary.
 
-## 📌 Features
+##Features
 
 - Takes employee salary as input
 - Takes bonus percentage
@@ -39,7 +39,7 @@ A simple Python mini-project that calculates an employee's salary after adding a
 - Determines the employee's salary bracket
 - Uses multiple functions to organize the program
 
-## 🧠 Concepts Used
+##Concepts Used
 
 - Variables
 - User input
@@ -53,7 +53,6 @@ A simple Python mini-project that calculates an employee's salary after adding a
 - Function calling
 
 ##How It Works
-
 The program follows this process:
 
 Enter Salary
@@ -76,25 +75,15 @@ Salary Bracket
 1. Calculate Bonus
 
 The bonus is calculated using:
-
 Bonus = Salary × Bonus Percentage / 100
-
-Then:
-
-Salary with Bonus = Salary + Bonus
+Then: Salary with Bonus = Salary + Bonus
 
 2. Calculate Tax
-
 Tax is calculated using:
-
 Tax = Salary with Bonus × Tax Percentage / 100
-
-Then:
-
-Final Salary = Salary with Bonus - Tax
+Then: Final Salary = Salary with Bonus - Tax
 
 3. Check Salary Bracket
-
 The final salary is classified into three brackets:
 
 Final Salary >= 100000
